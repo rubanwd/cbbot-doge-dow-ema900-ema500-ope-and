@@ -1,0 +1,27 @@
+2024-08-31 17:24:24,534 - INFO - --------------------------------------
+2024-08-31 17:24:25,224 - INFO - Time since last closed position: 1434.7110662460327 seconds
+2024-08-31 17:24:25,224 - INFO - More than 2 minutes have passed since the last closed position.
+2024-08-31 17:24:25,789 - INFO - EMA 9: 59046.96
+2024-08-31 17:24:25,789 - INFO - EMA 21: 59080.10
+2024-08-31 17:24:25,789 - INFO - RSI: 37.12
+2024-08-31 17:24:25,789 - INFO - Signal to open a position: SHORT
+2024-08-31 17:24:25,789 - INFO - Stop Loss: 59341.00
+2024-08-31 17:24:25,789 - INFO - Take Profit: 58632.00
+2024-08-31 17:24:25,789 - INFO - Trade side: Sell
+2024-08-31 17:24:26,353 - INFO - Order successfully placed: {'orderId': '4091d65c-b537-4bc5-9e84-50699c40f1d2', 'orderLinkId': ''}
+2024-08-31 17:24:26,354 - INFO - Trading bot started and ready to work.
+2024-08-31 17:24:36,358 - INFO - --------------------------------------
+2024-08-31 17:24:36,769 - INFO - There is an open limit order. A new order will not be placed.
+2024-08-31 17:24:46,773 - INFO - --------------------------------------
+2024-08-31 17:24:47,532 - INFO - There is an open limit order. A new order will not be placed.
+2024-08-31 17:24:57,537 - INFO - --------------------------------------
+2024-08-31 17:24:58,851 - INFO - Time since last closed position: 1468.3386862277985 seconds
+2024-08-31 17:24:58,851 - INFO - More than 2 minutes have passed since the last closed position.
+2024-08-31 17:24:59,061 - INFO - EMA 9: 59047.46
+2024-08-31 17:24:59,061 - INFO - EMA 21: 59080.33
+2024-08-31 17:24:59,061 - INFO - RSI: 37.44
+2024-08-31 17:24:59,061 - INFO - Signal to open a position: SHORT
+2024-08-31 17:24:59,061 - INFO - Stop Loss: 59343.00
+2024-08-31 17:24:59,061 - INFO - Take Profit: 58635.00
+2024-08-31 17:24:59,061 - INFO - Trade side: Sell
+2024-08-31 17:24:59,612 - INFO - Order successfully placed: {'orderId': 'b02b98ba-a60c-40b4-80e2-a25e41f03404', 'orderLinkId': ''}
