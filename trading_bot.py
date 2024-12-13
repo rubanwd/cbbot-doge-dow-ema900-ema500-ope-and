@@ -37,9 +37,13 @@ class TradingBot:
         if not current_price:
             logging.error("Failed to fetch the current price for quantity calculation.")
             return None
+
         quantity = self.trade_usdt_amount / current_price
-        logging.info(f"Calculated trade quantity: {quantity} DOGE for {self.trade_usdt_amount} USDT at price {current_price} USDT/DOGE.")
-        return quantity
+
+        # Round to 2 decimal places (adjust based on exchange requirements)
+        rounded_quantity = round(quantity, 0)
+        logging.info(f"Calculated trade quantity: {rounded_quantity} DOGE for {self.trade_usdt_amount} USDT at price {current_price} USDT/DOGE.")
+        return rounded_quantity
 
     def check_last_position_time(self):
         last_closed_position = self.data_fetcher.get_last_closed_position(self.symbol)
@@ -145,6 +149,7 @@ class TradingBot:
             side = 'Buy' if confirmation_signal == 'buy' else 'Sell'
 
             logging.info(f"Signal confirmed: {confirmation_signal} - Placing {side} order.")
+            logging.info(f"Qantity---------------: {self.quantity}")
             order_result = self.data_fetcher.place_order(
                 symbol=self.symbol,
                 side=side,
