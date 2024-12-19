@@ -26,7 +26,8 @@ class TradingBot:
         self.indicators = Indicators()
         self.risk_management = RiskManagement()
         self.symbol = os.getenv("TRADING_SYMBOL", 'DOGUSDT')
-        self.trade_usdt_amount = float(os.getenv("TRADE_USDT_AMOUNT", 100))  # Default to 100 USDT for trade amount
+        self.trade_usdt_amount = float(os.getenv("TRADE_USDT_AMOUNT", 1000))  # Default to 100 USDT for trade amount
+        self.leverage = float(os.getenv("LEVERAGE", 20))
         self.last_closed_position_time = 0
 
     def get_trade_quantity(self):
@@ -155,7 +156,7 @@ class TradingBot:
                 side=side,
                 qty=self.quantity,
                 current_price=current_price,
-                leverage=10,
+                leverage=self.leverage,
                 take_profit=take_profit
             )
 
